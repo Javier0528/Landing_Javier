@@ -1,11 +1,190 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: 'Edu VIC WA NT Beginner', cursive;
+body {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.hero {
+  background-image: linear-gradient(
+      120deg,
+      rgba(213, 252, 121, 0.603) 0%,
+      rgba(150, 230, 161, 0.644) 100%
+    ),
+    url("../img/header.jpg");
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.textos-hero {
+  height: 500px;
+  color: rgb(3, 2, 58);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textos-hero h1 {
+  font-size: 60px;
+}
+.textos-hero p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.textos-hero a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 15px;
+  background: rgba(48, 51, 197, 0.527);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: black;
+}
+.svg-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*  */
+
+.contenedor,
+.wave-contenedor {
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 0 80px 0;
+}
+.contenedor {
+  padding: 80px 0;
+}
+.titulo {
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.titulo.left {
+  text-align: left;
+}
+.titulo.rigth {
+  text-align: right;
+}
+
+/*  */
+
+.website {
+  display: flex;
+  justify-content: space-between;
+}
+.website img {
+  width: 48%;
+}
+.website .contenedor-textos-main {
+  width: 40%;
+}
+.parrafo {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    rgba(250, 112, 153, 0.671) 0%,
+    rgba(254, 225, 64, 0.623) 100%
+  );
+  padding: 12px 15px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  color: darkblue;
+}
+
+/*  */
+
+.info {
+  background: rgb(6, 24, 85);
+  color: white;
+}
+
+/*  */
+
+.content-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.card:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.card i{
+margin: 30px 0 30px 0;
+color: darkblue;
+font-size: 40px;
+}
+.card p{
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*  */
+
+.galeria{
+    background: #f2f2f2;
+    }
+
+.galeria-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.galeria-cont>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
 }
